@@ -1,0 +1,27 @@
+# Navigation
+alias .. = cd ..
+alias ... = cd ../..
+alias .... = cd ../../..
+
+# List
+alias ls = ls -l
+alias la = ls -la
+
+# Git
+alias gs = git status
+alias ga = git add
+alias gc = git commit --verbose
+alias gca = git commit --verbose --all
+alias gcam = git commit --all --message
+alias gcm = git commit --message
+alias gl = git log --topo-order --pretty=format:"%C(bold)Commit:%C(reset) %C(green)%H%C(red)%d%n%C(bold)Author:%C(reset) %C(cyan)%an <%ae>%n%C(bold)Date:%C(reset)   %C(blue)%ai (%ar)%C(reset)%n%+B"
+alias gp = git push
+
+# Quick edit
+alias nucfg = vi ~/.config/nushell/config.nu
+alias aliases = vi ~/.aliases
+
+# System
+alias c = clear
+alias h = history
+alias path = $env.PATH | split row (char esep)
