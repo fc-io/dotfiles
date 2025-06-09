@@ -24,4 +24,3 @@ alias aliases = vi ~/.aliases
 # System
 alias c = clear
 alias h = history
-alias path = $env.PATH | split row (char esep)
